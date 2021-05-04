@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+    --color-primary: #{$light-primary};
+    --color-second: #{$light-second};
+    --color-third: #{$light-third};
+    --color-text: #{$light-text};
+    --color-blue: #{$blue};
+}
+
+.dark {
+    --color-primary: #{$dark-primary};
+    --color-second: #{$dark-second};
+    --color-third: #{$dark-third};
+    --color-text: #{$dark-text};
+}
+
+body {
+    background: var(--color-primary);
+}
+
+.dark {
+    animation: dark 1.3s;
+    clip-path: circle(100%);
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    background: --color-primary;
+}
+
+.light {
+    animation: light 1.3s;
+    clip-path: circle(100%);
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    background: --color-primary;
+}
+
+@keyframes dark {
+    0% {
+        clip-path: circle(10% at 80% 5%);
+        opacity: 0;
+    }
+    100% {
+        clip-path: circle(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes light {
+    0% {
+        clip-path: circle(10% at 80% 5%);
+        opacity: 0;
+    }
+    100% {
+        clip-path: circle(100%);
+        opacity: 1;
+    }
+}
+
+
+// #wrapper {
+//     clip-path: circle(10% at 90% 20%);
+//     transition: all 0.5s ease-in-out;
+//     &.bgcolor {
+//         clip-path: circle(75%);
+//         background: var(--color-primary);
+//     }
+// }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// .__img {
+//     object-fit: cover;
+// }
+
+// .__b_radius{
+//     border-radius: 100%;
+// }
+
+// .__btn {
+//     // background: $primary-color;
+//     // color: $white-color;
+//     border-radius: 6px;
+// }
+// .__btn:hover {
+//     // background: $primary-color;
+//     // color: $white-color;
+//     border-radius: 6px;
+//     opacity: .8;
+// }
+
+// .button {
+//     $height: 40px;
+//     height: $height;
+//     margin: 0 10px;
+//     outline: none;
+//     border-radius: $height - $height / 2;
+//     border: none;
+//     // background: $primary-color;
+// }
+// // // Extra small devices (portrait phones, less than 576px)
+// // // No media query since this is the default in Bootstrap
+
+// // Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) {
+//     .header {
+//         display: none !important;
+//     }
+//     .moblie {
+//         display: block !important;
+//     }
+// }
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//     .header {
+//         display: none !important;
+//     }
+//     .moblie {
+//         display: block !important;
+//     }
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     // .header {
+//     //     display: none !important;
+//     // }
+//     // .moblie {
+//     //     display: block !important;
+//     // }
+
+// .header {
+//         display: flex !important;
+//         // .menu-item{
+//         //     display: none;
+//         // }
+//         i{
+//             // padding: 10px !important;
+//         }
+//         li:hover .menu-item{
+//             display: inline;
+//         }
+//     }
+
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//     // .header {
+//     //     display: flex !important;
+//     //     .menu-item{
+//     //         display: none;
+//     //     }
+//     //     i{
+//     //         padding: 10px !important;
+//     //     }
+//     //     li:hover .menu-item{
+//     //         display: inline;
+//     //     }
+//     // }
+//     .header {
+//         display: flex !important;
+//         .menu-item{
+//             display: inline;
+//         }
+//     }
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     .header {
+//         display: flex !important;
+//         .menu-item{
+//             display: inline;
+//         }
+//     }
+// }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 5px transparent;
+}
