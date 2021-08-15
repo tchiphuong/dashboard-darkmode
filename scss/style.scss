@@ -1,6 +1,12 @@
 // @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import "reset";
 @import "avariables";
 @import "all";
 // @import "layout/login";
-@import "layout/manager";
+@import "layout/index";
+// @import "layout/manager";
+// @import "layout/login";
 @import "responsive";
+@import "action/button";
+@import "action/table";
+@import "action/pagination";

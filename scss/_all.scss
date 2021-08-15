@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -12,9 +12,18 @@
     --color-third: #{$light-third};
     --color-text: #{$light-text};
     --color-blue: #{$blue};
+    --color-white: #{$white};
+    --color-black: #{$black};
 }
 
-.dark {
+// :root {
+//     --color-primary: #{$dark-primary};
+//     --color-second: #{$dark-second};
+//     --color-third: #{$dark-third};
+//     --color-text: #{$dark-text};
+// }
+
+[data-theme="dark"] {
     --color-primary: #{$dark-primary};
     --color-second: #{$dark-second};
     --color-third: #{$dark-third};
@@ -25,8 +34,13 @@ body {
     background: var(--color-primary);
 }
 
+input{
+    color: var(--color-text);
+}
+
 .dark {
     animation: dark 1.3s;
+    animation-fill-mode: forwards;
     clip-path: circle(100%);
     opacity: 1;
     height: 100vh;
@@ -36,6 +50,7 @@ body {
 
 .light {
     animation: light 1.3s;
+    animation-fill-mode: forwards;
     clip-path: circle(100%);
     opacity: 1;
     height: 100vh;

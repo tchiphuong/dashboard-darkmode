@@ -1,0 +1,42 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.2rem;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            border-radius: $border-radius;
+            overflow: hidden;
+            margin: 0.3rem;
+            a{
+                font-size: 1rem;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--color-second);
+                &:hover {
+                    background: var(--color-third);
+                }
+            }
+        
+            span{
+                font-size: 1rem;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: $border-radius;
+                background: var(--color-blue);
+                cursor: default;
+                color: var(--color-white);
+            }
+        }
+    }
+    
+}

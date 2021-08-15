@@ -1,18 +1,12 @@
 .main_login {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url("https://i.pinimg.com/originals/93/b0/5f/93b05fd7f98957ca0d415c61fe384b13.jpg");
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;display: flex;
+    align-items: center;
+    justify-content: center;
 
     .login {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         border-radius: 10px;
         backdrop-filter: blur(6px);
         background: rgba(255, 255, 255, 0.5);
@@ -36,6 +30,8 @@
                 margin-left: 5px;
                 line-height: 30px;
                 width: 80px;
+                flex-grow: 1;
+                font-size: 1rem;
             }
             span {
                 flex-grow: 1;
@@ -50,38 +46,40 @@
             }
             input[type="email"],
             input[type="password"] {
-                flex-grow: 1;
-                width: auto;
-                height: 30px;
-                padding: 5px 10px;
+                border: 1px solid transparent;
+                background: var(--color-third);
+                font-size: 1rem;
+                padding: 10px 15px;
+                border-radius: 10px;
                 outline: none;
-                border-radius: 5px;
-                border: 1px solid #ccc;
+            }
+            input[type="checkbox"]{
+                margin-left: 5px;
+                outline: none;
+                border: 1px solid transparent;
             }
         }
-        .button {
-            position: relative;
-            height: 30px;
+        
+        .remember_pass{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-            button {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                right: 0;
-                border-radius: 5px;
-                padding: 5px 20px;
-                outline: none;
-                border: none;
-                background-color: dodgerblue;
-                color: #fff;
-                &:hover {
-                    opacity: 0.8;
-                }
+        button {
+            border: none;
+            outline: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 10px;
+            height: 40px;
+            background: var(--color-blue);
+            color: #ffffff;
+            &:hover {
+                opacity: 0.8;
             }
         }
         .notification {
-            // display: none;
-            text-align: center;
             position: relative;
             color: red;
             padding: 10px 0px;
@@ -89,35 +87,35 @@
     }
 }
 
-@media (max-width: 576px) {
-    .login {
-        width: 80%;
-    }
-}
+// @media (max-width: 576px) {
+//     .login {
+//         width: 80%;
+//     }
+// }
 
-@media (min-width: 576px) {
-    .login {
-        width: 70%;
-    }
-}
+// @media (min-width: 576px) {
+//     .login {
+//         width: 70%;
+//     }
+// }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .login {
-        width: 60%;
-    }
-}
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     .login {
+//         width: 60%;
+//     }
+// }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    .login {
-        width: 40%;
-    }
-}
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//     .login {
+//         width: 40%;
+//     }
+// }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .login {
-        width: 30%;
-    }
-}
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     .login {
+//         width: 30%;
+//     }
+// }
