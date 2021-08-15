@@ -12,6 +12,7 @@
         z-index: 99999;
         background: var(--color-second);
         display: none;
+        height: calc(100vh - 2rem);
         inset: 1rem .6rem;
         border-radius: $border-radius;
         .header{
