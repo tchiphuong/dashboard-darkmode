@@ -1,5 +1,4 @@
     window.onload = init;
-
     document.querySelector(".nav-toggle").addEventListener('click', function() {
         let result = document.querySelector(".menu-mobile").classList.toggle("menu-toggle");
         resetSubmenus();
