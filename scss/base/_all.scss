@@ -34,7 +34,7 @@ body {
     background: var(--color-primary);
 }
 
-input{
+input {
     color: var(--color-text);
 }
 
@@ -80,7 +80,6 @@ input{
     }
 }
 
-
 // #wrapper {
 //     clip-path: circle(10% at 90% 20%);
 //     transition: all 0.5s ease-in-out;
@@ -96,6 +95,7 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--color-text);
 }
 
 // .__img {
