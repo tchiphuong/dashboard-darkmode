@@ -10,6 +10,7 @@
         border-radius: $border-radius;
         background: var(--color-second);
         padding: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         &__title {
             font-size: 1.5em;
             font-weight: 600;
@@ -37,7 +38,7 @@
                 opacity: 0.8;
             }
         }
-        .notification {
+        .validation {
             position: relative;
             color: red;
             padding: 10px 0px;

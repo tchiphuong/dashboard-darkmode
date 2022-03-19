@@ -154,14 +154,14 @@
                 </nav>
             </div>
             <div class="main">
-                <div class="link"><a href="#">Trang chủ</a>//<span>Danh sách sản phẩm</span></div>
+                <div class="breadcrumb"><a href="#">Trang chủ</a>//<span>Danh sách sản phẩm</span></div>
                 <div class="title">Danh sách sản phẩm</div>
-                <div class="action">
+                <!-- <div class="action">
                     <div class="button add"><i class="fas fa-plus"></i><span>Thêm</span></div>
                     <div class="button import"><i class="fas fa-file-export"></i><span>Xuất</span></div>
                     <div class="button export"><i class="fas fa-file-import"></i><span>Nhập</span></div>
                     <div class="button excel"><i class="fas fa-file-excel"></i><span>Xuất Excel</span></div>
-                </div>
+                </div> -->
                 <!-- <div class="container contain">
                     <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
                         <div class="contain__item">
@@ -273,7 +273,7 @@
                     </div>
                 </div> -->
                 <div class="container contain">
-                    <div class="table">
+                    <!-- <div class="table">
                         <table>
                             <thead>
                                 <th>Mã sản phẩm</th>
@@ -314,12 +314,12 @@
                                 </td>
                             </tr>
                         </table>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <div class="container contain">
                     <div class="form">
-                        <form action="#">
+                        <form action="#" class="row">
                             <div class="form-group">
                                 <label for="text">Textbox</label>
                                 <input type="text" id="text">
@@ -355,14 +355,25 @@
                                 <label for="">Email</label>
                                 <input type="email" name="" id="">
                             </div>
-                            <div class="form-group">
-                                <label for="file">Choose file
-                                    <div class="file">
-                                        <i class="fas fa-paperclip"></i>
-                                        <span>Chọn tệp</span><span>jpg, png, jpeg</span>
+                            <div class="form-group col-l-4">
+                                <label for="file1">Choose file
+                                    <input type="file" name="" id="file1" accept="image/*">
+                                    <div class="file-review">
+                                        <img class="" src="./public/images/profile.jpg" alt="">
                                     </div>
                                 </label>
-                                <input type="file" name="" id="file" hidden>
+                            </div>
+                            <div class="form-group col-l-4">
+                                <label for="file2">Choose file
+                                    <input type="file" name="" id="file2" accept="image/*">
+                                    <div class="file-review"></div>
+                                </label>
+                            </div>
+                            <div class="form-group col-l-4">
+                                <label for="file3">Choose file
+                                    <input type="file" name="" id="file3" accept="image/*">
+                                    <div class="file-review"></div>
+                                </label>
                             </div>
                             <div class="form-group">
                                 <input type="submit" class="button button-primary" value="Lưu">
@@ -384,6 +395,7 @@
             </div>
         </div>
     </div>
-    <script src="public/js/index.js"></script>
+    <script src="public/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </body>
 </html>
