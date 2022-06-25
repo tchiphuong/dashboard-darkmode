@@ -9,6 +9,11 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        .validation{
+            padding: 1.3rem .5rem;
+            color: $red;
+            font-size: 1.1rem;
+        }
         label {
             color: var(--color-text);
             padding: 0.5rem 0.3rem;

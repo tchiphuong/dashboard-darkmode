@@ -78,6 +78,9 @@
                                 font-size: 0.95rem;
                                 font-weight: 100;
                             }
+                            & .active a{
+                                background: var(--color-second);
+                            }
                         }
                     }
                 }
@@ -111,6 +114,9 @@
                     transition: transform 0.4s;
                 }
             }
+            .active a{
+                background: var(--color-second);
+            }
         }
     }
 
@@ -118,7 +124,7 @@
         animation: all 0.4s ease-in-out;
         width: 20%;
         max-width: 20%;
-        min-width: 15rem;
+        min-width: 20%;
         border-radius: $border-radius;
         height: calc(100% - 0.6rem);
         display: flex;
@@ -435,8 +441,7 @@
             }
 
             .contain {
-                display: flex;
-                flex-wrap: wrap;
+                padding: 1rem 1.2rem;
 
                 .contain__item {
                     margin: 0.3rem;
@@ -468,10 +473,10 @@
                             justify-content: center;
                         }
                         .count {
-                            bottom: -1.75rem;
-                            right: -1.2rem;
+                            bottom: -1.25rem;
+                            right: -0.5rem;
                             position: absolute;
-                            color: var(--color-second);
+                            color: var(--color-text);
                             font-weight: 600;
                             font-size: 3rem;
                             text-align: center;

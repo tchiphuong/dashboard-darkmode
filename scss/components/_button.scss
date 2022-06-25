@@ -1,4 +1,6 @@
 .button{
+    border: none;
+    outline: none;
     padding: .8rem 1.3rem;
     margin: 0.3rem;
     border-radius: $border-radius;
@@ -35,6 +37,24 @@
 }
 .button-primary{
     background: var(--color-blue) !important;
+    color: var(--color-white) !important;
+    &:hover{
+        animation: none !important;
+        opacity: .8;
+    }
+}
+
+.button-danger{
+    background: $red !important;
+    color: var(--color-white) !important;
+    &:hover{
+        animation: none !important;
+        opacity: .8;
+    }
+}
+
+.button-success{
+    background: $green !important;
     color: var(--color-white) !important;
     &:hover{
         animation: none !important;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.min.css">
+    <link rel="stylesheet" href="http://localhost/public/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>Dashboard</title>
@@ -156,14 +157,31 @@
             <div class="main">
                 <div class="breadcrumb"><a href="#">Trang chủ</a>//<span>Danh sách sản phẩm</span></div>
                 <div class="title">Danh sách sản phẩm</div>
-                <!-- <div class="action">
+                <div class="form">
+                    <form action="#" class="row">
+                        <div class="form-group col-l-3">
+                            <label for="text">Textbox</label>
+                            <input type="text" id="text">
+                        </div>
+                        <div class="form-group col-l-3">
+                            <label for="text">Textbox</label>
+                            <input type="text" id="text">
+                        </div>
+                        <div class="form-group col-l-3">
+                            <label for="text">Textbox</label>
+                            <input type="text" id="text">
+                        </div>
+                    </form>
+                </div>
+                <div class="action">
+                    <button class="button button-danger">Tìm kiếm</button>
                     <div class="button add"><i class="fas fa-plus"></i><span>Thêm</span></div>
-                    <div class="button import"><i class="fas fa-file-export"></i><span>Xuất</span></div>
+                    <div class="button button-success"><i class="fas fa-file-export"></i><span>Xuất</span></div>
                     <div class="button export"><i class="fas fa-file-import"></i><span>Nhập</span></div>
                     <div class="button excel"><i class="fas fa-file-excel"></i><span>Xuất Excel</span></div>
-                </div> -->
-                <!-- <div class="container contain">
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
+                </div>
+                <!-- <div class="contain row">
+                    <div class="col-l-3 col-m-6 col col-s-12">
                         <div class="contain__item">
                             <i class="fas fa-user"></i>
                             <div class="warp-name">
@@ -172,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
+                    <div class="col-l-3 col-m-6 col col-s-12">
                         <div class="contain__item">
                             <i class="fas fa-user"></i>
                             <div class="warp-name">
@@ -181,7 +199,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
+                    <div class="col-l-3 col-m-6 col col-s-12">
+                        <div class="contain__item">
+                            <i class="fa fa-user"></i>
+                            <div class="warp-name">
+                                <div class="name">アカウント</div>
+                                <div class="count">1.000.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-l-3 col-m-6 col col-s-12">
                         <div class="contain__item">
                             <i class="fas fa-user"></i>
                             <div class="warp-name">
@@ -190,105 +217,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">Account</div>
-                                <div class="count">1.000.000</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">គណនី</div>
-                                <div class="count">100</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">계정</div>
-                                <div class="count">100</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">ບັນຊີ</div>
-                                <div class="count">1.000.000</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">الحساب</div>
-                                <div class="count">1.000.000</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">cuenta</div>
-                                <div class="count">100</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">บัญชีผู้ใช้</div>
-                                <div class="count">100</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">Compte</div>
-                                <div class="count">1.000.000</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-l-4 col-m-6 col col-s-12">
-                        <div class="contain__item">
-                            <i class="fas fa-user"></i>
-                            <div class="warp-name">
-                                <div class="name">учетная запись</div>
-                                <div class="count">1.000.000</div>
-                            </div>
-                        </div>
-                    </div>
                 </div> -->
-                <div class="container contain">
-                    <!-- <div class="table">
+                <div class="contain">
+                    <div class="table">
                         <table>
                             <thead>
                                 <th>Mã sản phẩm</th>
-                                <th>Tên sản phẩm</th>
-                                <th>Diễn giải</th>
-                                <th>Created_at</th>
-                                <th>Updated_at</th>
+                                <th>Xuất xứ</th>
+                                <th style="width: 150px; text-align: center;">Mô tả</th>
+                                <th>Trạng thái</th>
                                 <th colspan="2">Chức năng</th>
                             </thead>
                             <tr>
-                                <td data-label="Mã sản phẩm" class="text-center">Mã</td>
-                                <td data-label="Tên sản phẩm">Tên</td>
-                                <td data-label="Diễn giải">Diễn giải</td>
-                                <td data-label="Created_at">Created_at</td>
-                                <td data-label="Updated_at">Updated_at</td>
+                                <td data-label="Mã sản phẩm" class="text-center">'.$value->Code.'</td>
+                                <td data-label="Khối lượng">'.$value->Weight.'</td>
+                                <td data-label="Mô tả"><span style="text-align: justify">'.$value->Description.'</span></td>
+                                <td data-label="Trạng thái">'.$value->Status.'</td>
+                                <td data-label="Chức năng" class="text-center">
+                                    <a href=""><i class="fa fa-pen"></i></a>
+                                </td>
+                                <td data-label="Chức năng" class="text-center">
+                                    <a href="">
+                                        <i class="fa fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Mã sản phẩm" class="text-center">'.$value->Code.'</td>
+                                <td data-label="Tên sản phẩm">'.$value->Name.'</td>
+                                <td data-label="Kích thước">'.$value->Size.'</td>
+                                <td data-label="Xuất xứ">'.$value->Origin.'</td>
                                 <td data-label="Chức năng" class="text-center">
                                     <a href=""><i class="fa fa-pen"></i></a>
                                 </td>
@@ -301,8 +259,7 @@
                             <tr>
                                 <td data-label="Mã sản phẩm" class="text-center">Mã</td>
                                 <td data-label="Tên sản phẩm">Tên</td>
-                                <td data-label="Diễn giải">Diễn giải</td>
-                                <td data-label="Created_at">Created_at</td>
+                                <td data-label="Diễn giải"><span>12</span></td>
                                 <td data-label="Updated_at">Updated_at</td>
                                 <td data-label="Chức năng" class="text-center">
                                     <a href=""><i class="fa fa-pen"></i></a>
@@ -314,7 +271,7 @@
                                 </td>
                             </tr>
                         </table>
-                    </div> -->
+                    </div>
                     
                 </div>
                 <div class="container contain">
@@ -323,6 +280,7 @@
                             <div class="form-group">
                                 <label for="text">Textbox</label>
                                 <input type="text" id="text">
+                                <div class="validation">Vui lòng nhập mật khẩu</div>
                             </div>
                             <div class="form-group">
                                 <label for="name">Textarea</label>
@@ -375,7 +333,7 @@
                                     <div class="file-review"></div>
                                 </label>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-l-3">
                                 <input type="submit" class="button button-primary" value="Lưu">
                             </div>
                         </form>
@@ -396,6 +354,7 @@
         </div>
     </div>
     <script src="public/js/main.js"></script>
+    <script src="public/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </body>
 </html>
